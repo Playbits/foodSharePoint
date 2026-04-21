@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FoodSharePoint - Farm to Table Community</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#10b748", // Emerald Green
+              "secondary": "#c2410c", // Terracotta
+              "background-light": "#f6f8f6",
+              "background-dark": "#102216",
+            },
+            fontFamily: {
+              "display": ["Be Vietnam Pro", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.75rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Be Vietnam Pro', sans-serif; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+<!-- Top Navigation -->
+<nav class="sticky top-0 z-50 flex items-center justify-between bg-white/80 dark:bg-background-dark/80 backdrop-blur-md p-4 border-b border-primary/10">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">restaurant_menu</span>
+<h1 class="text-xl font-black tracking-tight text-slate-900 dark:text-slate-100">FoodShare<span class="text-primary">Point</span></h1>
+</div>
+<div class="flex items-center gap-3">
+<button class="p-2 rounded-full hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-slate-700 dark:text-slate-300">notifications</span>
+</button>
+<div class="size-10 rounded-full bg-primary/20 flex items-center justify-center border border-primary/30 overflow-hidden">
+<span class="material-symbols-outlined text-primary">person</span>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative overflow-hidden px-4 pt-8 pb-12">
+<div class="absolute -top-24 -right-24 size-64 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-12 -left-12 size-48 bg-secondary/10 rounded-full blur-3xl"></div>
+<div class="relative z-10 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-sm">eco</span> Community Cooking Marketplace
+            </div>
+<h2 class="text-4xl font-black leading-tight tracking-tight">
+                Farm to Table meets <br/>
+<span class="text-primary">Modern Cooking</span>
+</h2>
+<p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed max-w-md">
+                Join the premium marketplace for authentic flavors. Share excess, book private sessions, and cook together.
+            </p>
+<div class="flex flex-col sm:flex-row gap-3">
+<button class="flex items-center justify-center gap-2 bg-primary text-white h-14 px-8 rounded-xl font-bold text-lg shadow-lg shadow-primary/20">
+                    Browse SharePoints
+                    <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="flex items-center justify-center gap-2 bg-secondary text-white h-14 px-8 rounded-xl font-bold text-lg shadow-lg shadow-secondary/20">
+                    Register as Vendor
+                </button>
+</div>
+</div>
+</header>
+<!-- Value Prop Grid -->
+<section class="px-4 py-8">
+<div class="grid grid-cols-2 gap-4">
+<div class="p-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm space-y-3">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">share</span>
+</div>
+<h3 class="font-bold text-slate-900 dark:text-slate-100">Share</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400">List excess premium ingredients easily.</p>
+</div>
+<div class="p-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm space-y-3">
+<div class="size-12 rounded-lg bg-secondary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">calendar_month</span>
+</div>
+<h3 class="font-bold text-slate-900 dark:text-slate-100">Book</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400">Secure spots in private cooking sessions.</p>
+</div>
+<div class="p-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm space-y-3">
+<div class="size-12 rounded-lg bg-orange-100 flex items-center justify-center">
+<span class="material-symbols-outlined text-orange-600">skillet</span>
+</div>
+<h3 class="font-bold text-slate-900 dark:text-slate-100">Cook</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400">Join vibrant community kitchen events.</p>
+</div>
+<div class="p-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm space-y-3">
+<div class="size-12 rounded-lg bg-blue-100 flex items-center justify-center">
+<span class="material-symbols-outlined text-blue-600">local_shipping</span>
+</div>
+<h3 class="font-bold text-slate-900 dark:text-slate-100">Delivery</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400">Fintech-grade logistics for food tracking.</p>
+</div>
+</div>
+</section>
+<!-- Featured SharePoints -->
+<section class="py-8">
+<div class="px-4 flex items-center justify-between mb-6">
+<h3 class="text-xl font-bold tracking-tight">Featured SharePoints</h3>
+<a class="text-primary font-semibold text-sm" href="#">View all</a>
+</div>
+<div class="flex overflow-x-auto gap-4 px-4 pb-4 hide-scrollbar">
+<!-- Card 1 -->
+<div class="min-w-[280px] bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-md overflow-hidden">
+<div class="h-40 bg-center bg-cover relative" data-alt="A vibrant salad bowl with grilled chicken and fresh greens" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC-_cdlyZjK4lYLQRHXU6QrevGxDeyneeRP70mTDU--eFpnA0z47lZu9COX6_lDrnltJMMq8Hg9etN_VSKnDd_ynyyCMowh5zy3MFVBhyU7IHOlhLl7kqFXL2C6-L5ZwyCUsSLJXZzhwFxb6me-TJKObObdp4lCaovfLfsKRo2Fz6NtBHSQgRrg-wheSUiDyBB3E5QI6eg0-IFThZDYMKgksgQATZJwPbeYFpUwDLppQ6-6dumGXGZICxuW4425YdZC01full9jlOE')">
+<div class="absolute top-3 left-3 px-2 py-1 bg-white/90 rounded text-xs font-bold text-primary">AVAILABLE NOW</div>
+</div>
+<div class="p-4 space-y-2">
+<div class="flex justify-between items-start">
+<h4 class="font-bold text-lg">Smoky Jollof Feast</h4>
+<div class="flex items-center text-secondary font-bold">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="text-xs ml-0.5">4.9</span>
+</div>
+</div>
+<p class="text-sm text-slate-500 dark:text-slate-400 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">person</span> By Mama Tobi's Kitchen
+                    </p>
+<div class="flex items-center justify-between pt-2">
+<span class="text-primary font-black text-xl">$12.50<span class="text-xs font-medium text-slate-400">/portion</span></span>
+<button class="size-9 rounded-full bg-primary text-white flex items-center justify-center">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="min-w-[280px] bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-md overflow-hidden">
+<div class="h-40 bg-center bg-cover relative" data-alt="Authentic Jamaican jerk chicken platter with rice and peas" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBP4sk3wa4bfGQfGLI3JOPa_m-9x2fO5ZFP_4B_u7_eYFp616e0qZB5kLde4P1X904zPmXov4A-c7hcqhy-zs9YNVP1-EQ5hiqgPViDm3c7iBvnBbrNX0ELATPUneRFd7-6367ojeBKKtULE1mQPBGZJih73Vn1L-nbKgwV_BOBPRjFQJXCoJRj5l6lfMtfzyde0Gt1Nkid_7aePMvZleZxJvzhMcDQI2RZY9kmEke-RbhDDf4sx_Z7VJ8GQVx3B64VPj39cxLIpCg')">
+<div class="absolute top-3 left-3 px-2 py-1 bg-white/90 rounded text-xs font-bold text-secondary">PRE-ORDER</div>
+</div>
+<div class="p-4 space-y-2">
+<div class="flex justify-between items-start">
+<h4 class="font-bold text-lg">Kingston Jerk Platter</h4>
+<div class="flex items-center text-secondary font-bold">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="text-xs ml-0.5">4.8</span>
+</div>
+</div>
+<p class="text-sm text-slate-500 dark:text-slate-400 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">person</span> By Spice Island
+                    </p>
+<div class="flex items-center justify-between pt-2">
+<span class="text-primary font-black text-xl">$15.00<span class="text-xs font-medium text-slate-400">/portion</span></span>
+<button class="size-9 rounded-full bg-primary text-white flex items-center justify-center">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Vendor Spotlight -->
+<section class="px-4 py-8 bg-primary/5 rounded-t-3xl">
+<h3 class="text-xl font-bold tracking-tight mb-6">Top Community Cooks</h3>
+<div class="space-y-4">
+<div class="flex items-center gap-4 bg-white dark:bg-slate-900 p-3 rounded-xl border border-primary/10">
+<div class="size-16 rounded-full overflow-hidden border-2 border-primary/20">
+<img alt="" class="size-full object-cover" data-alt="Portrait of a smiling professional female chef" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAa2YbVCAUA3j8hDqZUyngwQFpQDKdTU7tg08CpiEFbhoCR_W4kLvuS5VgDCwB_4tl_UAA8uwfpWoAmBCwDZFDDPdc7xwSOYkJis6Xm7RR0Gat0kdREH3weJReTfFp7dYbEKFuKerddvXxzWmIQQIkByO8tt0MtA7LBaMMWWrutZM4TzK39yzPiy0lMP81gWRXLNA-Slc_Fv68i38rFGcEtY42kX2RFGMAASGzmDXfa4MFmVKQ8mvv0fwoVo0Y3oqH84b1dejZs5c"/>
+</div>
+<div class="flex-1">
+<h4 class="font-bold text-slate-900 dark:text-slate-100">Chef Amina Bello</h4>
+<p class="text-xs text-slate-500">Master of Nigerian Fusion • Lagos</p>
+<div class="flex items-center gap-2 mt-1">
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary text-[10px] font-bold">500+ ORDERS</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary/10 text-secondary text-[10px] font-bold">TOP RATED</span>
+</div>
+</div>
+<button class="p-2 text-primary">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+<div class="flex items-center gap-4 bg-white dark:bg-slate-900 p-3 rounded-xl border border-primary/10">
+<div class="size-16 rounded-full overflow-hidden border-2 border-primary/20">
+<img alt="" class="size-full object-cover" data-alt="Portrait of a male chef with traditional attire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDt9H_bdLew8IwKfehRGA5oeOW6jRu96uarTyTM0o7jpdflinsXD86sgVAjFGaTAMbFU1yv2uEXlilnliGbpD1hvW8IxuzjNXKXG5G6D-LhHyXQHaCoK_VytfvrmFiKxXyBmW4qEA7PvXSuTgxBd-riYQoVnERLjp_fykaCLtESIn9Un72FONKozY4hnqJZycXlO7PR_e0W0Ol4NNMt0XDr7QFeXombqtZ1IxF95ghrEeQqDLBd9rCqCyPJUA7F3JdY3p0UFjwZ1ZU"/>
+</div>
+<div class="flex-1">
+<h4 class="font-bold text-slate-900 dark:text-slate-100">Marcus Wright</h4>
+<p class="text-xs text-slate-500">Jamaican Grill Expert • Kingston</p>
+<div class="flex items-center gap-2 mt-1">
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary text-[10px] font-bold">320+ ORDERS</span>
+<span class="px-2 py-0.5 rounded-full bg-blue-50 text-blue-600 text-[10px] font-bold">FAST SHIP</span>
+</div>
+</div>
+<button class="p-2 text-primary">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Livestream Teaser -->
+<section class="px-4 py-8">
+<div class="relative w-full aspect-video rounded-2xl overflow-hidden bg-slate-900 shadow-2xl">
+<img class="absolute inset-0 size-full object-cover opacity-60" data-alt="Professional kitchen background with steam and cooking action" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9XOJ0iXkeXl2XFjyJQouTWCuxwfzicQzw6D18h9bhJDM8lpAvA8IGnPrbNORdIaDlEdHjo_sCiogpRG2zn1bqHlIMoST01yyIK0BYINLW_eif1TPwjDhLptOJXv2FiskN-FA3fjgfMzlfg4yKGzSqaQz77kJ90yfCVWdxlRYo71obZBb8UQZbaMqi-E925_GRCs2Bm32YdYT54d0sfg-ckUa3sOJLr2AtX9EkIzdu8fyRdVLHM_f8gkhdM0pJ17iV2Gz39m_qfU0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-transparent to-transparent"></div>
+<div class="absolute top-4 left-4 flex items-center gap-2">
+<div class="flex items-center gap-1.5 px-3 py-1 bg-red-600 rounded-full text-white text-[10px] font-black animate-pulse">
+<span class="size-1.5 bg-white rounded-full"></span> UPCOMING LIVE
+                </div>
+<div class="px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-[10px] font-bold">
+                    8:00 PM EST
+                </div>
+</div>
+<div class="absolute bottom-6 left-6 right-6 text-white space-y-2">
+<h4 class="text-2xl font-black">Spices of the West Indies</h4>
+<p class="text-sm text-slate-300">Join Chef Marcus for an interactive jerk seasoning workshop live from his home kitchen.</p>
+<div class="flex items-center gap-4 pt-2">
+<button class="flex items-center gap-2 px-6 py-2.5 bg-white text-slate-900 rounded-xl font-bold text-sm">
+<span class="material-symbols-outlined text-sm">notifications_active</span> Remind Me
+                    </button>
+<div class="flex -space-x-2">
+<div class="size-8 rounded-full border-2 border-slate-900 bg-slate-400"></div>
+<div class="size-8 rounded-full border-2 border-slate-900 bg-slate-500"></div>
+<div class="size-8 rounded-full border-2 border-slate-900 bg-slate-600"></div>
+<div class="size-8 rounded-full border-2 border-slate-900 bg-primary flex items-center justify-center text-[8px] font-bold">+2.4k</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer Space -->
+<div class="h-24"></div>
+<!-- Bottom Nav Bar -->
+<div class="fixed bottom-0 left-0 right-0 z-50 bg-white dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 px-4 pb-6 pt-2">
+<div class="flex justify-between items-center max-w-md mx-auto">
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined fill-1">home</span>
+<span class="text-[10px] font-bold">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">explore</span>
+<span class="text-[10px] font-bold">Explore</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<div class="size-12 -mt-8 rounded-full bg-primary shadow-lg shadow-primary/40 flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-3xl">add</span>
+</div>
+<span class="text-[10px] font-bold mt-1">Post</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">live_tv</span>
+<span class="text-[10px] font-bold">Live</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-bold">Profile</span>
+</a>
+</div>
+</div>
+</body></html>

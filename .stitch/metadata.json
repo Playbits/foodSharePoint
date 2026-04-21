@@ -1,0 +1,54 @@
+{
+  "projectId": "1470530424228335996",
+  "title": "FoodSharePoint UI Revamp",
+  "screens": {
+    "index-desktop": {
+      "id": "8f52419f3aec4f5a9016de70127b672a",
+      "sourceScreen": "projects/1470530424228335996/screens/8f52419f3aec4f5a9016de70127b672a",
+      "width": 2560,
+      "height": 7234
+    },
+    "index-mobile": {
+      "id": "6f7d7fb6372a4f12923ef8bfec6f2f1b",
+      "sourceScreen": "projects/1470530424228335996/screens/6f7d7fb6372a4f12923ef8bfec6f2f1b",
+      "width": 780,
+      "height": 2568
+    },
+    "sharepoint-details-desktop": {
+      "id": "aed0495284114ad690368cf26889396d",
+      "sourceScreen": "projects/1470530424228335996/screens/aed0495284114ad690368cf26889396d",
+      "width": 2560,
+      "height": 3572
+    },
+    "sharepoint-details-mobile": {
+      "id": "218f4a58894a44be8daf0e3cc2339c2b",
+      "sourceScreen": "projects/1470530424228335996/screens/218f4a58894a44be8daf0e3cc2339c2b",
+      "width": 780,
+      "height": 2684
+    },
+    "vendor-profile-desktop": {
+      "id": "ddee9e219d23495dad185496a69a634d",
+      "sourceScreen": "projects/1470530424228335996/screens/ddee9e219d23495dad185496a69a634d",
+      "width": 2560,
+      "height": 3862
+    },
+    "vendor-profile-mobile": {
+      "id": "21e7872832b4474a84052122d9693e13",
+      "sourceScreen": "projects/1470530424228335996/screens/21e7872832b4474a84052122d9693e13",
+      "width": 780,
+      "height": 2944
+    },
+    "vendor-dashboard-desktop": {
+      "id": "485a133c1d6d425683dc9437c6448056",
+      "sourceScreen": "projects/1470530424228335996/screens/485a133c1d6d425683dc9437c6448056",
+      "width": 2560,
+      "height": 2214
+    },
+    "vendor-dashboard-mobile": {
+      "id": "3a05dfa2a8d244989191786ef18beaf1",
+      "sourceScreen": "projects/1470530424228335996/screens/3a05dfa2a8d244989191786ef18beaf1",
+      "width": 780,
+      "height": 1768
+    }
+  }
+}
